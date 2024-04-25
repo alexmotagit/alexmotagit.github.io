@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerenciador de Notas</h1>
+    <button id="createNote">Criar Nota</button>
+    <div id="notesContainer"></div>
+
+    <!-- Formulário para criar/editar notas -->
+    <div id="noteForm">
+        <input type="text" id="noteTitle" placeholder="Título da Nota" required>
+        <textarea id="noteText" placeholder="Texto da Nota" required></textarea>
+        <button id="save">Salvar Nota</button>
+        <button onclick="closeForm()">Cancelar</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
